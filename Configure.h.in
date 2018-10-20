@@ -1,0 +1,3 @@
+#cmakedefine USE_MYMATH
+#cmakedefine HAVE_LOG
+#cmakedefine HAVE_EXP

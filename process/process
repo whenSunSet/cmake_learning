@@ -1,0 +1,7 @@
+1.if：用法类似c语言，在使用参数的时候不需要用${}来取值
+2.foreach：foreach(loop_var 1 2 3) ... endforeach(loop_var) 或者
+foreach(loop_var RANGE 4) ... endforeach(loop_var) 或者
+foreach(loop_var RANGE 0 3 1) ... endforeach(loop_var) 从 0 到 3，1是步伐
+3.while：while(condition) ... endwhile(condition)
+4.foreach 和 while 可用 break 和 continue，在循环中使用${}进行取值
+5.可用 option 和 if 进行配合。option(<option_var> "description" [initial_var])

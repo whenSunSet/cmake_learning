@@ -1,0 +1,14 @@
+1.<command>必填、[command]可填、a\|b 均可
+2.cmake 可以三种形式组织文件：
+    1.CMakeList.txt：文件夹形式
+    2.<script>.cmake：脚本形式
+    3.<module>.cmake：模块形式
+3.文件夹形式：类似 gradle 根目录下需要有一个 CMakeList.txt 的文件作为入口，如果其他目录下面还
+需要有新的子文件夹要编译，子文件夹下也需要有 CMakeList.txt。而且需要在根目录 CMakeList.txt 下
+用 add_subdirectory() 来注明。此外，每个CMakeList.txt 在被处理的时候都是以 cmake 命令调用
+的文件夹作为当前工作目录和输出目录。
+4.定义和取消变量用的是 set() 和 unset()，被定义的变量始终是字符串类型，变量名区分大小写。
+变量名用${}进行获取，也可在变量中进行嵌套${${}}
+5.add_excutable() 和 add_library() 分别用于生成可执行文件与库。构建 android so 库的时候
+可使用 add_library()。target_link_libraries() 用于链接n个互相之间有依赖关系的库
+6.message([<mode>] "message to display") 这个方法用于输出日志
