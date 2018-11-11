@@ -1,0 +1,3 @@
+// 这个是配置文件，cmake 会根据他在 cmake 的 build 目录生成一个 TutorialConfig.h 文件
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
